@@ -57,3 +57,11 @@ assets belong to their own frontend or branding surfaces.
 
 After editing, check JavaScript syntax and refresh the Panel to verify the icon
 at its actual display size in light and dark themes.
+
+## Behavior tests
+
+Run `composer install` and `composer test` from this repository. Tests boot Kirby
+with disposable runtime directories and never load project secrets or send real
+mail. The host kit can also run this suite with `composer test:plugins`.
+
+Run `node --test tests/*.test.mjs` for the owned JavaScript behavior tests.
